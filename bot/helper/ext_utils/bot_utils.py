@@ -102,7 +102,7 @@ def get_readable_message():
                 if hasattr(download, 'is_torrent'):
                     msg += f"| P: {download.aria_download().connections} " \
                            f"| S: {download.aria_download().num_seeders}"
-                msg += f"\nGID: <code>{download.gid()}</code>"
+                msg += f"\n<code>/cancel {download.gid()}</code>"
             msg += "\n\n"
         return msg
 
